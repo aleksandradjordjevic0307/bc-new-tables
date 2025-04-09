@@ -9,7 +9,7 @@
             "server": "http://BCSandbox",
             "serverInstance": "BC",
             "authentication": "UserPassword",
-            "startupObjectId": 50108,   //app starts here in BC 
+            "startupObjectId": 50109,   //app starts here in BC 
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true,
