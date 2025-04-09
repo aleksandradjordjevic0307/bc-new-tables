@@ -15,6 +15,12 @@ table 50107 Pet
         field(2; Name; Text[100])
         {
             Caption = 'Name';
+            trigger OnValidate()
+            begin
+                Message('Table: Name Validation');
+                Rec.Name := 'Validated name';
+            end;
+
         }
         field(3; VetVendorNo; Code[20])
         {

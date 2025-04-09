@@ -17,6 +17,11 @@ page 50108 PetList
                 }
                 field(Name; Rec.Name)
                 {
+                    trigger OnValidate()
+                    begin
+                        Message('Page: Name Validation');
+                        Rec.Name := 'Validated name';
+                    end;
                 }
                 field(VetVendorNo; Rec.VetVendorNo)
                 {
